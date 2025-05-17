@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2678eeaad5ecacb0e5491ca86cdff9454c95b640
 <h2 align="center">
   Portfolio Website - v2.0<br/>
   <a href="" target="_blank">soumyajit.tech</a>
