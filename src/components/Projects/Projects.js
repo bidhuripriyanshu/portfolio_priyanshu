@@ -24,7 +24,7 @@ function Projects() {
               imgPath={Tss}
               isBlog={false}
               title="Transport schedular"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="A full-stack MERN web app enabling real-time ride and shipment scheduling between users and transporters. Features include role-based login, instant updates via Socket.io, Dockerized deployment, and automated CI/CD with GitHub Actions. Built for scalability and efficient transport management"
               ghLink="https://github.com/Raghuveer222/TSS-Final"
               demoLink="https://transporter-schedular.onrender.com/"
             />
@@ -35,7 +35,7 @@ function Projects() {
               imgPath={crop}
               isBlog={false}
               title="Crop-Cate"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="A smart crop recommendation system that uses machine learning to suggest the most suitable crops based on soil conditions, weather, and other environmental factors. Designed to assist farmers in making informed agricultural decisions for better yield and sustainability."
               ghLink="https://github.com/bidhuripriyanshu/Crop-cate"
               demoLink="https://github.com/bidhuripriyanshu/Crop-cate/"
             />
@@ -46,7 +46,7 @@ function Projects() {
               imgPath={route}
               isBlog={false}
               title="Route Rationalization Model Using Machine Learning  for Real-Time Traffic Management"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="A machine learning-based project aimed at optimizing and rationalizing transportation routes for improved efficiency and cost-effectiveness. The system analyzes route data to suggest optimal paths, reduce redundancy, and enhance overall logistics planning."
               ghLink="https://github.com/bidhuripriyanshu/ROUTE_RATIONALISATION_ML_FINAL"
               demoLink="https://github.com/bidhuripriyanshu/ROUTE_RATIONALISATION_ML_FINAL"              
             />
@@ -56,8 +56,8 @@ function Projects() {
             <ProjectCard
               imgPath={ebook}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="Ebook-BookLand"
+              description=" web-based platform that allows users to browse, read, and manage ebooks online. Built with modern web technologies, this project includes user authentication, ebook upload/view functionality, and a responsive interface for a seamless reading experience."
               ghLink="https://github.com/bidhuripriyanshu/ebook_platform_online"
               demoLink="https://github.com/bidhuripriyanshu/ebook_platform_online"
             />
