@@ -10,106 +10,137 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
+
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="modern-home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Python. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Machine Learning. </b>
-                also in areas related to{" "}
-                <b className="purple">
-                  Data Science and Artificial Intelligence.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/bidhuripriyanshu"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+        <div className="about-container">
+          <Row className="align-items-center">
+            <Col lg={8} md={12} className="home-about-description">
+              <div className="about-content">
+                <h1 className="about-title">
+                  LET ME <span className="purple">INTRODUCE</span> MYSELF
+                </h1>
+                <div className="about-text">
+                  <p className="home-about-body">
+                    I fell in love with programming and I have at least learnt
+                    something, I think… 🤷‍♂️
+                  </p>
+                  
+                  <div className="skills-section">
+                    <h3 className="skills-title">My Expertise</h3>
+                    <p className="home-about-body">
+                      I am fluent in classics like{" "}
+                      <span className="purple">C++, Javascript and Python.</span>
+                    </p>
+                  </div>
+
+                  <div className="interests-section">
+                    <h3 className="interests-title">Areas of Interest</h3>
+                    <p className="home-about-body">
+                      My field of Interest's are building new{" "}
+                      <span className="purple">Web Technologies and Machine Learning,</span>{" "}
+                      also in areas related to{" "}
+                      <span className="purple">Data Science and Artificial Intelligence.</span>
+                    </p>
+                  </div>
+
+                  <div className="tech-section">
+                    <h3 className="tech-title">Tech Stack</h3>
+                    <p className="home-about-body">
+                      Whenever possible, I also apply my passion for developing products
+                      with <span className="purple">Node.js</span> and{" "}
+                      <span className="purple">Modern Javascript Library and Frameworks</span>{" "}
+                      like <span className="purple">React.js and Next.js</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            
+            <Col lg={4} md={12} className="myAvtar">
+              <div className="avatar-container">
+                <Tilt
+                  tiltMaxAngleX={10}
+                  tiltMaxAngleY={10}
+                  perspective={800}
+                  transitionSpeed={1500}
+                  scale={1.1}
+                  gyroscope={true}
                 >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://x.com/priyanshu351"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/priyanshu-bidhuri-0757a1299/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/_bidhuripriyanshu/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
+                  <div className="avatar-wrapper">
+                    <img src={myImg} className="avatar-image" alt="avatar" />
+                    <div className="avatar-glow"></div>
+                  </div>
+                </Tilt>
+              </div>
+            </Col>
+          </Row>
+          
+          <Row>
+            <Col md={12} className="home-about-social">
+              <div className="social-container">
+                <h2 className="social-title">FIND ME ON</h2>
+                <p className="social-subtitle">
+                  Feel free to <span className="purple">connect</span> with me
+                </p>
+                
+                <ul className="home-about-social-links">
+                  <li className="social-icons">
+                    <a
+                      href="https://github.com/bidhuripriyanshu"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour home-social-icons"
+                      aria-label="GitHub Profile"
+                    >
+                      <AiFillGithub />
+                    </a>
+                  </li>
+                  
+                  <li className="social-icons">
+                    <a
+                      href="https://x.com/priyanshu351"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour home-social-icons"
+                      aria-label="Twitter Profile"
+                    >
+                      <AiOutlineTwitter />
+                    </a>
+                  </li>
+                  
+                  <li className="social-icons">
+                    <a
+                      href="https://www.linkedin.com/in/priyanshu-bidhuri-0757a1299/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour home-social-icons"
+                      aria-label="LinkedIn Profile"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                  </li>
+                  
+                  <li className="social-icons">
+                    <a
+                      href="https://www.instagram.com/_bidhuripriyanshu/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour home-social-icons"
+                      aria-label="Instagram Profile"
+                    >
+                      <AiFillInstagram />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </div>
       </Container>
     </Container>
   );
 }
+
 export default Home2;
