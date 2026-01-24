@@ -19,23 +19,21 @@ function ContactForm() {
   // EmailJS Configuration
   // Replace these values with your EmailJS credentials from https://dashboard.emailjs.com
   // You can also use environment variables: process.env.REACT_APP_EMAILJS_SERVICE_ID, etc.
-  const EMAILJS_CONFIG = {
+const EMAILJS_CONFIG = {
+  SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID",
+  TEMPLATE_ID_TO_USER: process.env.REACT_APP_EMAILJS_TEMPLATE_USER || "YOUR_TEMPLATE_ID_TO_USER",
+  TEMPLATE_ID_TO_OWNER: process.env.REACT_APP_EMAILJS_TEMPLATE_OWNER || "YOUR_TEMPLATE_ID_TO_OWNER",
+  PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "5WgNu7toJ9j8Xjj0o",
+  OWNER_EMAIL: process.env.REACT_APP_OWNER_EMAIL || "bidhuripriyanshu351@example.com",
+};
 
-    SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID",
-    TEMPLATE_ID_TO_USER: process.env.REACT_APP_EMAILJS_TEMPLATE_USER || "YOUR_TEMPLATE_ID_TO_USER",
-    TEMPLATE_ID_TO_OWNER: process.env.REACT_APP_EMAILJS_TEMPLATE_OWNER || "YOUR_TEMPLATE_ID_TO_OWNER",
-    PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY",
-    // Your email where you want to receive contact form submissions
-    OWNER_EMAIL: process.env.REACT_APP_OWNER_EMAIL || "your-email@example.com",
-    
-  };
 
   // Initialize EmailJS
   useEffect(() => {
     if (EMAILJS_CONFIG.PUBLIC_KEY && EMAILJS_CONFIG.PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
       emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
     }
-  }, []);
+  }, []); 
 
   const handleChange = (e) => {
     setFormData({
