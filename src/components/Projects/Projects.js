@@ -23,10 +23,10 @@ function Projects() {
             <ProjectCard
               imgPath={Tss}
               isBlog={false}
-              title="Transport schedular"
-              description="A full-stack MERN web app enabling real-time ride and shipment scheduling between users and transporters. Features include role-based login, instant updates via Socket.io, Dockerized deployment, and automated CI/CD with GitHub Actions. Built for scalability and efficient transport management"
-              ghLink="https://github.com/Raghuveer222/TSS-Final"
-              demoLink="https://transporter-schedular.onrender.com/"
+              title="AI Career Coach"
+              description="An AI-powered full-stack career coaching platform built with Next.js, PostgreSQL, Prisma, Clerk, and Google Gemini AI. Features include ATS-optimized resume building, AI-generated cover letters, interview preparation quizzes, resume ATS analysis for PDF/DOCX files, personalized industry insights, onboarding workflows, and performance tracking. Integrated Inngest cron jobs for automated industry data refresh and deployed with a scalable modern architecture."
+              ghLink="https://github.com/bidhuripriyanshu/carrer-coach-ai"
+              demoLink="https://carrer-coach-ai.vercel.app/"
             />
           </Col>
 
@@ -34,10 +34,10 @@ function Projects() {
             <ProjectCard
               imgPath={crop}
               isBlog={false}
-              title="Crop-Cate"
-              description="A smart crop recommendation system that uses machine learning to suggest the most suitable crops based on soil conditions, weather, and other environmental factors. Designed to assist farmers in making informed agricultural decisions for better yield and sustainability."
-              ghLink="https://github.com/bidhuripriyanshu/Crop-cate"
-              demoLink="https://github.com/bidhuripriyanshu/Crop-cate/"
+              title="LabourLink"
+              description="A full-stack platform connecting daily-wage labourers with local contractors, built using Next.js, PostgreSQL, Prisma, and NextAuth. Features include role-based authentication (Labour, Contractor, Admin), secure RBAC middleware protection, job posting and application management, advanced job search & filtering, contractor dashboards, labour profiles, and scalable Prisma-powered database architecture. Designed to simplify local hiring and create employment opportunities efficiently."
+              ghLink="https://github.com/bidhuripriyanshu/LabourLink"
+              demoLink="https://labour-link-local.vercel.app/"
             />
           </Col>
 
@@ -45,10 +45,10 @@ function Projects() {
             <ProjectCard
               imgPath={route}
               isBlog={false}
-              title="Route Rationalization Model Using Machine Learning  for Real-Time Traffic Management"
-              description="A machine learning-based project aimed at optimizing and rationalizing transportation routes for improved efficiency and cost-effectiveness. The system analyzes route data to suggest optimal paths, reduce redundancy, and enhance overall logistics planning."
-              ghLink="https://github.com/bidhuripriyanshu/ROUTE_RATIONALISATION_ML_FINAL"
-              demoLink="https://github.com/bidhuripriyanshu/ROUTE_RATIONALISATION_ML_FINAL"              
+              title="FarmStackAI"
+              description="An AI-powered smart agriculture platform built with the MERN stack, Flask, and Machine Learning to help farmers make data-driven decisions. Features include crop recommendation based on soil and environmental parameters, secure JWT authentication, bcrypt password encryption, community discussion forums, and real-time interaction between React frontend, Node.js backend, and Python ML services. Designed to improve farming productivity through intelligent crop prediction and digital collaboration."
+              ghLink="https://github.com/bidhuripriyanshu/FarmStackAI"
+              demoLink="https://farm-stack-ai.vercel.app/"              
             />
           </Col>
 

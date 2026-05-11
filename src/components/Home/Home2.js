@@ -9,135 +9,131 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home2() {
+const features = [
+  {
+    icon: "💡",
+    title: "Passionate Developer",
+    body: "I fell in love with programming and haven't looked back — always learning, always building.",
+  },
+  {
+    icon: "🖥️",
+    title: "Fluent in C++, JavaScript & Python",
+    body: "My core languages power everything from algorithms to full-stack web applications.",
+  },
+  {
+    icon: "🌐",
+    title: "Web & ML Enthusiast",
+    body: "I blend modern web technologies with machine learning to build intelligent, user-friendly products.",
+  },
+  {
+    icon: "⚡",
+    title: "MERN Stack & React Ecosystem",
+    body: "Node.js, React.js, Next.js — I craft fast, scalable full-stack applications end-to-end.",
+  },
+];
 
+const socials = [
+  {
+    href: "https://github.com/bidhuripriyanshu",
+    label: "GitHub",
+    icon: <AiFillGithub />,
+  },
+  {
+    href: "https://x.com/priyanshu351",
+    label: "Twitter / X",
+    icon: <AiOutlineTwitter />,
+  },
+  {
+    href: "https://www.linkedin.com/in/priyanshu-bidhuri-0757a1299/",
+    label: "LinkedIn",
+    icon: <FaLinkedinIn />,
+  },
+  {
+    href: "https://www.instagram.com/_bidhuripriyanshu/",
+    label: "Instagram",
+    icon: <AiFillInstagram />,
+  },
+];
+
+function Home2() {
   return (
     <Container fluid className="modern-home-about-section" id="about">
       <Container>
-        <div className="about-container">
-          <Row className="align-items-center">
-            <Col lg={8} md={12} className="home-about-description">
-              <div className="about-content">
-                <h1 className="about-title">
-                  LET ME <span className="purple">INTRODUCE</span> MYSELF
-                </h1>
-                <div className="about-text">
-                  <p className="home-about-body">
-                    I fell in love with programming and I have at least learnt
-                    something, I think… 🤷‍♂️
-                  </p>
-                  
-                  <div className="skills-section">
-                    <h3 className="skills-title">My Expertise</h3>
-                    <p className="home-about-body">
-                      I am fluent in classics like{" "}
-                      <span className="purple">C++, Javascript and Python.</span>
-                    </p>
-                  </div>
+        <Row className="align-items-start">
+          {/* Left — content */}
+          <Col lg={7} md={12} className="home-about-description">
+            <span className="section-label">Who I Am</span>
 
-                  <div className="interests-section">
-                    <h3 className="interests-title">Areas of Interest</h3>
-                    <p className="home-about-body">
-                      My field of Interest's are building new{" "}
-                      <span className="purple">Web Technologies and Machine Learning,</span>{" "}
-                      also in areas related to{" "}
-                      <span className="purple">Data Science and Artificial Intelligence.</span>
-                    </p>
-                  </div>
+            <h1 className="about-title">
+              Let Me{" "}
+              <span className="purple">Introduce</span>{" "}
+              Myself
+            </h1>
 
-                  <div className="tech-section">
-                    <h3 className="tech-title">Tech Stack</h3>
-                    <p className="home-about-body">
-                      Whenever possible, I also apply my passion for developing products
-                      with <span className="purple">Node.js</span> and{" "}
-                      <span className="purple">Modern Javascript Library and Frameworks</span>{" "}
-                      like <span className="purple">React.js and Next.js</span>
-                    </p>
+            <p className="about-lead">
+              A software developer who loves turning complex ideas into elegant,
+              performant software — from pixel-perfect UIs to intelligent back-end
+              systems.
+            </p>
+
+            {/* Feature cards */}
+            <div className="feature-cards">
+              {features.map((f, i) => (
+                <div className="feature-card" key={i}>
+                  <div className="feature-icon">{f.icon}</div>
+                  <div className="feature-body">
+                    <h4>{f.title}</h4>
+                    <p>{f.body}</p>
                   </div>
                 </div>
+              ))}
+            </div>
+          </Col>
+
+          {/* Right — avatar */}
+          <Col lg={5} md={12} className="about-avatar-col">
+            <Tilt
+              tiltMaxAngleX={8}
+              tiltMaxAngleY={8}
+              perspective={900}
+              transitionSpeed={1500}
+              scale={1.04}
+              gyroscope={true}
+            >
+              <div className="avatar-card">
+                <img src={myImg} className="avatar-image" alt="Priyanshu Bidhuri avatar" />
+                <span className="avatar-badge">Open to opportunities ✦</span>
               </div>
-            </Col>
-            
-            <Col lg={4} md={12} className="myAvtar">
-              <div className="avatar-container">
-                <Tilt
-                  tiltMaxAngleX={10}
-                  tiltMaxAngleY={10}
-                  perspective={800}
-                  transitionSpeed={1500}
-                  scale={1.1}
-                  gyroscope={true}
-                >
-                  <div className="avatar-wrapper">
-                    <img src={myImg} className="avatar-image" alt="avatar" />
-                    <div className="avatar-glow"></div>
-                  </div>
-                </Tilt>
-              </div>
-            </Col>
-          </Row>
-          
-          <Row>
-            <Col md={12} className="home-about-social">
-              <div className="social-container">
-                <h2 className="social-title">FIND ME ON</h2>
-                <p className="social-subtitle">
-                  Feel free to <span className="purple">connect</span> with me
-                </p>
-                
-                <ul className="home-about-social-links">
-                  <li className="social-icons">
+            </Tilt>
+          </Col>
+        </Row>
+
+        {/* Social links */}
+        <Row>
+          <Col md={12}>
+            <div className="social-section">
+              <p className="social-heading">Find Me On</p>
+              <p className="social-sub">
+                Feel free to <span className="purple">connect</span> with me
+              </p>
+              <ul className="home-about-social-links">
+                {socials.map((s) => (
+                  <li className="social-icons" key={s.label}>
                     <a
-                      href="https://github.com/bidhuripriyanshu"
+                      href={s.href}
                       target="_blank"
                       rel="noreferrer"
                       className="icon-colour home-social-icons"
-                      aria-label="GitHub Profile"
+                      aria-label={s.label}
                     >
-                      <AiFillGithub />
+                      {s.icon}
                     </a>
                   </li>
-                  
-                  <li className="social-icons">
-                    <a
-                      href="https://x.com/priyanshu351"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour home-social-icons"
-                      aria-label="Twitter Profile"
-                    >
-                      <AiOutlineTwitter />
-                    </a>
-                  </li>
-                  
-                  <li className="social-icons">
-                    <a
-                      href="https://www.linkedin.com/in/priyanshu-bidhuri-0757a1299/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour home-social-icons"
-                      aria-label="LinkedIn Profile"
-                    >
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                  
-                  <li className="social-icons">
-                    <a
-                      href="https://www.instagram.com/_bidhuripriyanshu/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour home-social-icons"
-                      aria-label="Instagram Profile"
-                    >
-                      <AiFillInstagram />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </Col>
-          </Row>
-        </div>
+                ))}
+              </ul>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </Container>
   );

@@ -5,27 +5,26 @@ function Type() {
   return (
     <div className="typewriter-container">
       <div className="typewriter-wrapper">
+        <span className="typewriter-prefix">I am a —</span>
         <Typewriter
           options={{
             strings: [
               "Software Developer",
-              "Machine Learning Enthusiast",
               "MERN Stack Developer",
+              "ML Enthusiast",
               "Open Source Contributor",
               "Problem Solver",
-              "Creative Thinker"
             ],
             autoStart: true,
             loop: true,
-            deleteSpeed: 50,
-            delay: 75,
+            deleteSpeed: 45,
+            delay: 70,
             cursor: "|",
             wrapperClassName: "typewriter-text",
-            cursorClassName: "typewriter-cursor"
+            cursorClassName: "typewriter-cursor",
           }}
         />
       </div>
-      <div className="typewriter-underline"></div>
     </div>
   );
 }
